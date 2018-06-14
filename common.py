@@ -32,7 +32,7 @@ def downloadPicture(url,name,type):
         print('下载超时')
         # if(os.path.isfile(filePath)):
         #     os.remove(filePath)
-
+# 解决url中的转义
 def urlCode(str):
     str = str.replace('\\u003d','=')
     str = str.replace('\\u0026','&')
